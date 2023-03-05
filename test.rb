@@ -40,8 +40,9 @@ class Client
 		while (line = @client.gets)
 			response += line
 		end
-		header = response[0, response.index("\r\n\r\n")]
-		puts header
+		puts response
+		# header = response[0, response.index("\r\n\r\n")]
+		# puts header
 	end
 	
 	def close_all
