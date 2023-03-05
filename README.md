@@ -1,5 +1,7 @@
 # Simple Webserv Tester
-A very simple and customizable webserv tester for 42 using ruby client socket.
+Its a hassle to send request message with CRLF ?
+
+Here is a very simple and customizable webserv tester for 42 using ruby client socket.
 
 # Requirement (Used in development)
 - Ruby 2.6.3
