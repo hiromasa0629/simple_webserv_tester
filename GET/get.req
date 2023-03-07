@@ -1,2 +1,2 @@
-GET / HTTP/1.1
+GET /assets/2mb.jpg HTTP/1.1
 Host: localhost:8080
