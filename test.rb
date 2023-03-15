@@ -13,7 +13,7 @@ class Client
 			raise ArgumentError, "Invalid host or port #{av[1]}:#{av[2]}"
 		end
 	end
-	
+
 	def send_request
 		is_finish_header = false
 		is_chunked = false
@@ -34,7 +34,7 @@ class Client
 			sleep(0.2);
 		end
 	end
-	
+
 	def recieve_response
 		response = ""
 		while (line = @client.gets)
@@ -44,7 +44,7 @@ class Client
 		# header = response[0, response.index("\r\n\r\n")]
 		# puts header
 	end
-	
+
 	def close_all
 		@file.close
 		@client.close
@@ -61,7 +61,7 @@ if __FILE__ == $PROGRAM_NAME
 		client = Client.new(ARGV)
 		client.send_request
 		client.recieve_response
-		client.close_all
+		# client.close_all
 	rescue ArgumentError => e
 		puts "#{e}"
 	end
