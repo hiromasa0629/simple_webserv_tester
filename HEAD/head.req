@@ -1,2 +1,3 @@
-HEAD /helloworld HTTP/1.1
+HEAD /assets/2mb.jpg HTTP/1.1
 Host: localhost:8080
+Connection: close
