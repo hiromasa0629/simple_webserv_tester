@@ -37,12 +37,19 @@ class Client
 
 	def recieve_response
 		response = ""
-		while (line = @client.gets)
+		# while (line = @client.gets)
+		# 	response += line
+		# end
+		# while (line = @client.read(1000000))
+		# 	response += line
+		# end
+		@client.each_line do |line|
 			response += line
 		end
 		puts response
 		# header = response[0, response.index("\r\n\r\n")]
 		# puts header
+		# puts response.length
 	end
 
 	def close_all
